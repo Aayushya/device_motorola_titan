@@ -48,5 +48,12 @@ BOARD_CACHEIMAGE_PARTITION_SIZE := 67108864
 # Properties
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 
+# Release tools
+TARGET_RELEASETOOLS_EXTENSIONS := $(DEVICE_PATH)
+
+# TWRP
+TW_INTERNAL_STORAGE_PATH := "/data/media"
+TW_INTERNAL_STORAGE_MOUNT_POINT := "data"
+
 # inherit from the proprietary version
 -include vendor/motorola/titan/BoardConfigVendor.mk
