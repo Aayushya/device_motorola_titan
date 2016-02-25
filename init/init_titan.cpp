@@ -75,11 +75,9 @@ void init_msm_properties(unsigned long msm_id, unsigned long msm_ver, char *boar
         property_set("ro.build.fingerprint", "motorola/titan_retaildsds/titan_umtsds:6.0/MPB24.65-34/31:user/release-keys");
         property_set("ro.build.product", "titan_umtsds");
         property_set("ro.mot.build.customerid", "retaildsdsall");
-        property_set("ro.telephony.default_network", "0,1");
+        property_set("ro.telephony.default_network", "0");
         property_set("ro.telephony.ril.config", "simactivation");
-        property_set("persist.radio.multisim.config", "dsds");
-        property_set("persist.radio.dont_use_dsd", "true");
-        property_set("persist.radio.plmn_name_cmp", "1");
+        property_set("persist.radio.multisim.config", "");
     } else if (ISMATCH(radio, "0x6")) {
         /* XT1064 */
         property_set("ro.product.device", "titan_umts");
