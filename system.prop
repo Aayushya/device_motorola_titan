@@ -3,3 +3,8 @@
 # audio
 ro.audio.monitorRotation=1
 ro.config.vc_call_vol_steps=8
+
+ro.build.fingerprint=motorola/titan_retuglb/titan_umts:6.0/MPB24.65-34/31:user/release-keys
+ro.product.device=titan
+ro.product.model=Moto G 2014
+
